@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block title %}Question: {{ question }}{% endblock %}
+{% block body %}
+
+    <h1>{{ question }}</h1>
+
+    {# oh, I'm just a comment hiding here. За да се изпълни функцията от контролера в темпллеита, то трябва да се екстендне и да се впишат блоковете на темпл. и тук, за да се маркират местата за изпринтване.#}
+
+    <div>
+        Eventually, we'll print the full question here!
+    </div>
+    <h2>Answers ({{ answers | length }})</h2>
+
+{% endblock %}
