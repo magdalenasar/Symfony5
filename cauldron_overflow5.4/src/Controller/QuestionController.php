@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class QuestionController extends AbstractController
 {
     /**
-     * @Route("/", name="app_question")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
@@ -17,7 +17,7 @@ class QuestionController extends AbstractController
     }
 
     /**
-     * @Route("/questions/{slug}, name="app_question_show")
+     * @Route("/questions/{slug}")
      */
     public function show($slug)
     {
@@ -33,6 +33,7 @@ class QuestionController extends AbstractController
         ]);
     }
 }
+
 
 // reneder always returns Response object with HTML inside.
 // reneder geeft response op basis van html template
