@@ -13,31 +13,25 @@ class QuestionController extends AbstractController
      */
     public function homepage()
     {
-        return new Response('HomePage! What a bewitching controller we have conjured!');
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
-     *  @Route("/questions/{slug}")
-     */ public  function  show( $slug)
-{
-    $answers  =  [
-        'Make  sure  your  cat  is  sitting  purrrfectly  still',
-        'Honestly,  I  like  furry  shoes  better  than  MY  cat',
-        'Maybe…  try  saying  the  spell  backwards?',
-    ] ;
+     * @Route("/questions/{slug}")
+     */
+    public function show($slug)
+    {
+        $answers = [
+            'Make sure your cat is sitting purrrfectly still ?',
+            'Honestly, I like furry shoes better than MY cat',
+            'Maybe... try saying the spell backwards?',
+        ];
 
-    //tuk $this e the object itself
-    // or use dd: dump & die(kills the page)
-//    dump($slug, $this);
-    dump($this);
-
-    return  $this->render(
-        'question/show.html.twig',
-        [
-            'question'  =>  ucwords( str_replace( '-' ,  '  ',   $slug)) ,
-            'answers'  =>  $answers
-        ]
-    ) ; }
+        return $this->render('question/show.html.twig', [
+            'question' => ucwords(str_replace('-', ' ', $slug)),
+            'answers' => $answers,
+        ]);
+    }
 }
 
 // reneder always returns Response object with HTML inside.
