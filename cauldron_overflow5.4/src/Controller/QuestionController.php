@@ -25,6 +25,12 @@ class QuestionController extends AbstractController
         'Honestly,  I  like  furry  shoes  better  than  MY  cat',
         'Maybe…  try  saying  the  spell  backwards?',
     ] ;
+
+    //tuk $this e the object itself
+    // or use dd: dump & die(kills the page)
+//    dump($slug, $this);
+    dump($this);
+
     return  $this->render(
         'question/show.html.twig',
         [
