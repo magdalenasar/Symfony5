@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class QuestionController extends AbstractController
@@ -35,7 +34,7 @@ class QuestionController extends AbstractController
 }
 
 
-// reneder always returns Response object with HTML inside.
-// reneder geeft response op basis van html template
+// render always returns Response object with HTML inside.
+// render geeft response op basis van html template
 
 //1 arg- templ; 2- array met data
