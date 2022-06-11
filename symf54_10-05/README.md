@@ -11,7 +11,8 @@ Commands:
 
 een Command aanmaken: 
    php bin/console make:command -> app:randompw
-
+die commando oproepen:
+php bin/console app:randompw
 
 composer require orm
 
