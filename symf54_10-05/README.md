@@ -24,3 +24,8 @@ een Entity aanmaken:
     - geboortedatum, date, niet verplicht
     - punten, integer, niet verplicht
 
+de applicatie opstarten, old school:
+
+    php -S localhost:8000 -t public   = werkt beter als problemen heeft
+
+    symfony serve (-d)

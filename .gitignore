@@ -1,3 +1,5 @@
 .DS_Store
 .idea/
 symfony_demo_project
+/var/
+/vendor/
