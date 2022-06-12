@@ -19,3 +19,10 @@ Dit is een bericht vanuit de HomeController
 2022-06-12 12:14:20: SELECT * from film WHERE film_id=2
 2022-06-12 12:14:23: SELECT * from film WHERE film_id=2
 2022-06-12 12:14:49: select * from film
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+2022-06-12 12:37:53: SELECT * from film WHERE film_id=2
+2022-06-12 12:37:56: select * from film
+2022-06-12 12:38:14: select * from film
+2022-06-12 12:38:15: SELECT * from film WHERE film_id=2
+Dit is een bericht vanuit de HomeController

@@ -53,4 +53,20 @@ class HomeController extends AbstractController
 
         return $this->json($data);
     }
+
+    /**
+     * @Route("/api/films", methods={"POST"}, name="api_films_post")
+     * @return Response
+     */
+    public function apiFilmsPost()
+    {
+        $contents = json_decode( file_get_contents("php://input") );
+
+        $messages[] = "Posting a new film! " . $contents->title;
+
+        return $this->json($messages);
+
+        //https://lornajane.net/posts/2008/accessing-incoming-put-data-from-php
+
+    }
 }
