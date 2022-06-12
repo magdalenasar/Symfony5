@@ -43,9 +43,13 @@ class StudentController extends AbstractController
         if ( !$student ){
             throw $this->createNotFoundException("Student not found");
         }
-        dd($student);
+        dump($student);
 
-        return new Response("De gevraagde student met id $id vind je bij de dumps");
+//        return new Response("De gevraagde student met id $id vind je bij de dumps");
+        return $this->render('student/detail.html.twig', [
+            'student' => $student,
+        ]);
+
     }
 
     /**
