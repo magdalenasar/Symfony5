@@ -3,12 +3,14 @@
 {% block body %}
 
     <h1>Dit is de detail pagina van een student</h1>
-    <p> Student in kwestie:</p>
+    <h3> Student in kwestie:</h3>
 
    {{ student.naam }}
    {{ student.voornaam }}
    {{ student.punten }}
     {{ student.geslacht }}
+    Geboren op: {{ student.geboortedatum |date("m/d/Y") }}
+    {{ student.geboortedatum |ago }}
 
 
 {% endblock %}
