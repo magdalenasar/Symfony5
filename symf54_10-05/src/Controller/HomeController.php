@@ -31,7 +31,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/films" , methods="GET", name="api_films")
+     * @Route("/api/films" , methods={"GET"}, name="api_films")
      * @return Response
      */
     public function apiFilms(){
@@ -44,12 +44,12 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/film/{id}", methods="GET", name="api_film")
+     * @Route("/api/film/{id}", methods={"GET"}, name="api_film")
      * @return Response
      */
     public function apiGetOneFilm($id){
 
-        $data = $this -> dbManager->GetData("SELECT * from film WHERE film_id=$id");
+        $data = $this -> dbManager->GetData("SELECT * FROM film WHERE film_id=$id");
 
         return $this->json($data);
     }
@@ -60,13 +60,15 @@ class HomeController extends AbstractController
      */
     public function apiFilmsPost()
     {
-        // check the body of the req,
-        $contents = json_decode( file_get_contents("php://input") );
+        // check the body of the req
+        $contents =  json_decode( file_get_contents("php://input") );
 
-        if ($contents) {
+        // als leeg is
+        if ($contents) // als de body in JSON formaat is...
+        {
             $title = $contents -> title;
         } else {
-            $title = $_POST['title'];
+            $title = $_POST['title']; // als we een klassiek HTML form verzenden...
 
         }
 
