@@ -24,8 +24,8 @@ class DBManager
         if ( $this->conn === null )
         {
             try {
-                $this->conn = new \PDO("mysql:host=" . $this->dbconfig["serve    r"] . ";dbname=" . $this->dbconfig["database"],
-                    $this->dbconfig["user"], $this->dbconfig["password"], array(
+                $this->conn = new \PDO($this->db_url, $this->db_user,$this->db_pwd,
+                    array(
                         \PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
                     ));
                 $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);

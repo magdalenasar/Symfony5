@@ -7,7 +7,7 @@ class Logger
     private $fp;
     private $logfile;
 
-    public function __construct( $logfile )
+    public function __construct( $logfile = "log123.txt" )
     {
         $this->logfile = $logfile;
         $this->fp = fopen( $this->logfile, "a+");

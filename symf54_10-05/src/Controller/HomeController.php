@@ -3,22 +3,46 @@
 namespace App\Controller;
 
 use App\Services\DBManager;
+use App\Services\Logger;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+
+    private $dbManager;
+    private $logger;
+
+    public function __construct(DBManager $dbManager, Logger $logger)
+    {
+        $this->dbManager = $dbManager;
+        $this->logger = $logger;
+    }
+
+
     /**
      * @Route("/")
-     * @param DBManager $dbManager
      * @return Response
      */
-    public function home(DBManager $dbManager): Response
+    public function home(): Response
     {
-        $data = $dbManager->GetData("select * from films");
-        dump($data);
+        $this->logger->Log("Dit is een bericht vanuit de HomeController");
 
         return $this->render("home/home.html.twig");
+    }
+
+    /**
+     * @Route("/api/films")
+     * @return Response
+     */
+    public function apiFilms(){
+
+        $data = $this -> dbManager->GetData("select * from film");
+//        dump($data);
+
+//        return new Response("Dit is second home");
+        return $this->json($data);
+
     }
 }

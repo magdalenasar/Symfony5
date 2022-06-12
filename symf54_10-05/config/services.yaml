@@ -27,3 +27,7 @@ services:
            $db_url: "%env(DATABASE_URL)%"
            $db_user: "%env(DATABASE_USER)%"
            $db_pwd: "%env(DATABASE_PWD)%"
+
+    App\Services\Logger:
+      bind:
+           $logfile: "%env(LOGFILE)%"
