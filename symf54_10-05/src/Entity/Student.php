@@ -28,7 +28,7 @@ class Student
     private $voornaam;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="date", nullable=true)
      */
     private $geboortedatum;
 
@@ -36,6 +36,11 @@ class Student
      * @ORM\Column(type="integer")
      */
     private $punten;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $geslacht;
 
     public function getId(): ?int
     {
@@ -86,6 +91,18 @@ class Student
     public function setPunten(int $punten): self
     {
         $this->punten = $punten;
+
+        return $this;
+    }
+
+    public function getGeslacht(): ?int
+    {
+        return $this->geslacht;
+    }
+
+    public function setGeslacht(?int $geslacht): self
+    {
+        $this->geslacht = $geslacht;
 
         return $this;
     }
