@@ -9,4 +9,5 @@ les 12-05: Doctrine
 7) StudentController aanmaken en newStudent()
 - DInj van EntityManagerInterface: persist(), flush()
 8) rest: coderen
-9) date 'ago' filter: module installeren -> composer require knplabs/knp-time-bundle
+9) date,ago filters: module installeren -> composer require knplabs/knp-time-bundle
+- |date("m/d/Y")

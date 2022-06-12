@@ -33,19 +33,13 @@ class StudentController extends AbstractController
     /**
      * @Route("/student/{id}", name="app_student_show")
      */
-    public function show($id, EntityManagerInterface $em): Response
+    public function show(Student $student): Response
     {
-        $repo = $em->getRepository(Student::class);
-
-        $student = $repo->findOneBy([ 'id' => $id ]);
-
         // als er geen student hebben, toon error
         if ( !$student ){
             throw $this->createNotFoundException("Student not found");
         }
-        dump($student);
 
-//        return new Response("De gevraagde student met id $id vind je bij de dumps");
         return $this->render('student/detail.html.twig', [
             'student' => $student,
         ]);

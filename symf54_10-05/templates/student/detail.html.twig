@@ -9,8 +9,8 @@
    {{ student.voornaam }}
    {{ student.punten }}
     {{ student.geslacht }}
-    Geboren op: {{ student.geboortedatum |date("m/d/Y") }}
-    {{ student.geboortedatum |ago }}
+    <br> Geboren op: {{ student.geboortedatum |date("m/d/Y") }}
+    <br> Born: {{ student.geboortedatum |ago }}
 
 
 {% endblock %}
