@@ -12,3 +12,7 @@ Dit is een bericht vanuit de HomeController
 Dit is een bericht vanuit de HomeController
 Dit is een bericht vanuit de HomeController
 2022-06-12 11:41:27: select * from film
+Dit is een bericht vanuit de HomeController
+2022-06-12 12:05:54: select * from film
+2022-06-12 12:06:01: select * from film
+2022-06-12 12:06:07: SELECT * from film WHERE film_id=2

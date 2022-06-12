@@ -43,6 +43,16 @@ class HomeController extends AbstractController
 
 //        return new Response("Dit is second home");
         return $this->json($data);
+    }
 
+    /**
+     * @Route("/api/film/{id}")
+     * @return Response
+     */
+    public function apiGetOneFilm($id){
+
+        $data = $this -> dbManager->GetData("SELECT * from film WHERE film_id=$id");
+
+        return $this->json($data);
     }
 }

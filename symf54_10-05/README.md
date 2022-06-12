@@ -26,6 +26,6 @@ een Entity aanmaken:
 
 de applicatie opstarten, old school:
 
-    php -S localhost:8000 -t public   = werkt beter als problemen heeft
+    php -S localhost:8000 -t public   = werkt beter als problemen er heeft
 
     symfony serve (-d)
