@@ -10,7 +10,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
-
     private $dbManager;
     private $logger;
 
@@ -20,12 +19,11 @@ class HomeController extends AbstractController
         $this->logger = $logger;
     }
 
-
     /**
-     * @Route("/")
+     * @Route("/home", name="app_home")
      * @return Response
      */
-    public function home(): Response
+    public function app_home(): Response
     {
         $this->logger->Log("Dit is een bericht vanuit de HomeController");
 
@@ -33,7 +31,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/films")
+     * @Route("/api/films" , methods="GET", name="api_films")
      * @return Response
      */
     public function apiFilms(){
@@ -46,7 +44,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/film/{id}")
+     * @Route("/api/film/{id}", methods="GET", name="api_film")
      * @return Response
      */
     public function apiGetOneFilm($id){

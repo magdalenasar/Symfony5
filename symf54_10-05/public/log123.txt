@@ -16,3 +16,6 @@ Dit is een bericht vanuit de HomeController
 2022-06-12 12:05:54: select * from film
 2022-06-12 12:06:01: select * from film
 2022-06-12 12:06:07: SELECT * from film WHERE film_id=2
+2022-06-12 12:14:20: SELECT * from film WHERE film_id=2
+2022-06-12 12:14:23: SELECT * from film WHERE film_id=2
+2022-06-12 12:14:49: select * from film
