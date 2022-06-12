@@ -60,13 +60,26 @@ class HomeController extends AbstractController
      */
     public function apiFilmsPost()
     {
+        // check the body of the req,
         $contents = json_decode( file_get_contents("php://input") );
 
-        $messages[] = "Posting a new film! " . $contents->title;
+        if ($contents) {
+            $title = $contents -> title;
+        } else {
+            $title = $_POST['title'];
+
+        }
+
+        $messages[] = "Posting a new film! " . $title;
 
         return $this->json($messages);
 
-        //https://lornajane.net/posts/2008/accessing-incoming-put-data-from-php
-
+    }
+    /**
+     * @Route("/form", methods={"GET"}, name="form_register")
+     */
+    public function formRegister()
+    {
+        return $this->render("forms/register.html.twig");
     }
 }
