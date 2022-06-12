@@ -1,17 +1,17 @@
 Doel 3 routes aanmaken: home met string, api endpoints
 
-Routes preview:
+> Routes preview:
 1)
 
 <img width="914" alt="Screenshot 2022-06-12 at 14 38 21" src="https://user-images.githubusercontent.com/91531129/173233611-2c7de721-dbff-4c77-9ed5-c4470980b9da.png">
 
-2)
+## 2)
 
 <img width="927" alt="Screenshot 2022-06-12 at 14 38 10" src="https://user-images.githubusercontent.com/91531129/173233616-00b2eb6d-de87-4b6a-b068-3ab7886b43cc.png">
 
 
 Les 10/05/2022  (reinstall PHP to 7.3 ~4) Dit is een test om de versie te proberen
-Commands:
+# Commands:
 1) composer create-project symfony/skeleton:"5.4.99" symf54_10-05
     -- Steven: composer create-project symfony/skeleton:"5.4.99" new_symf54composer
 2) composer require annotations 
