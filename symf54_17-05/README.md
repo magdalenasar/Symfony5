@@ -3,4 +3,4 @@
 3) Migration - DB teacher tabel cr-> 
 3.1)php bin/console make:migra
 3.2)   php bin/console doctrine:migrations:migrate
-4) 
+4) Entity with API Platform com-> @ApiResource()  + import USE statement

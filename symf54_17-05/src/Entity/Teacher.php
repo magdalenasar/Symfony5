@@ -68,9 +68,9 @@ class Teacher
         return $this;
     }
 
-    public function getGeboortedatum(): ?\DateTimeInterface
+    public function getGeboortedatum(): ?string
     {
-        return $this->geboortedatum;
+        return $this->geboortedatum->format("Y-m-d");
     }
 
     public function setGeboortedatum(?\DateTimeInterface $geboortedatum): self
