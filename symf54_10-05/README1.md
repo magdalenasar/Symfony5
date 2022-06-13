@@ -45,3 +45,5 @@ de applicatie opstarten, old school:
 
 Alle routes bekijken: 
     php bin/console debug:router
+
+php app/console cache:clear

@@ -31,20 +31,19 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/films" , methods={"GET"}, name="api_films")
+     * @Route("/api/films" , methods={"GET"}, name="api_films_getAll")
      * @return Response
      */
     public function apiFilms(){
 
         $data = $this -> dbManager->GetData("select * from film");
-//        dump($data);
+        dump($data);
 
-//        return new Response("Dit is second home");
         return $this->json($data);
     }
 
     /**
-     * @Route("/api/film/{id}", methods={"GET"}, name="api_film")
+     * @Route("/api/film/{id}", methods={"GET"}, name="api_film_getOne")
      * @return Response
      */
     public function apiGetOneFilm($id){
@@ -55,7 +54,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/api/films", methods={"POST"}, name="api_films_post")
+     * @Route("/api/films", methods={"POST"}, name="api_film_post")
      * @return Response
      */
     public function apiFilmsPost()

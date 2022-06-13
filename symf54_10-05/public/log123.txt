@@ -29,3 +29,94 @@ Dit is een bericht vanuit de HomeController
 Dit is een bericht vanuit de HomeController
 Dit is een bericht vanuit de HomeController
 Dit is een bericht vanuit de HomeController
+2022-06-12 23:57:20: select * from film
+2022-06-13 00:02:26: select * from film
+2022-06-13 00:04:12: select * from film
+2022-06-13 00:04:14: select * from film
+2022-06-13 00:05:25: select * from film
+2022-06-13 00:12:30: select * from film
+2022-06-13 00:16:10: select * from film
+2022-06-13 00:17:05: select * from film
+2022-06-13 00:17:07: select * from film
+2022-06-13 00:17:14: select * from film
+2022-06-13 00:17:14: SELECT * FROM film WHERE film_id=2
+2022-06-13 00:17:20: SELECT * FROM film WHERE film_id=2
+2022-06-13 00:17:34: SELECT * FROM film WHERE film_id=2
+2022-06-13 00:17:34: select * from film
+2022-06-13 00:19:22: 
+2022-06-13 00:19:33: select * from film
+2022-06-13 00:22:34: select * from film
+2022-06-13 00:22:37: select * from film
+2022-06-13 00:22:54: select * from film
+2022-06-13 00:22:56: select * from film
+2022-06-13 00:22:57: select * from film
+2022-06-13 00:23:17: select * from film
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+2022-06-13 00:25:31: select * from film
+2022-06-13 00:26:21: select * from film
+2022-06-13 00:27:08: select * from film
+2022-06-13 00:28:07: select * from film
+2022-06-13 00:28:09: select * from film
+2022-06-13 00:28:10: select * from film
+2022-06-13 00:29:18: select * from film
+2022-06-13 00:29:21: select * from film
+2022-06-13 00:29:22: select * from film
+2022-06-13 00:29:24: select * from film
+2022-06-13 00:29:25: select * from film
+2022-06-13 00:29:50: select * from film
+2022-06-13 00:31:20: select * from film
+2022-06-13 00:31:29: select * from film
+2022-06-13 00:31:30: select * from film
+2022-06-13 00:31:32: select * from film
+2022-06-13 00:32:22: select * from film
+2022-06-13 00:32:23: select * from film
+2022-06-13 00:33:22: select * from film
+2022-06-13 00:37:11: select * from film
+2022-06-13 00:39:36: select * from film
+2022-06-13 00:39:40: select * from film
+2022-06-13 00:39:41: select * from film
+2022-06-13 00:40:09: select * from film
+2022-06-13 00:44:57: select * from film
+2022-06-13 00:46:07: select * from film
+2022-06-13 00:46:26: select * from film
+2022-06-13 00:46:26: SELECT * FROM film WHERE film_id=2
+2022-06-13 00:46:29: SELECT * FROM film WHERE film_id=1
+2022-06-13 00:48:20: select * from film
+2022-06-13 00:48:24: select * from film
+2022-06-13 00:48:26: select * from film
+2022-06-13 00:49:51: select * from film
+2022-06-13 00:56:02: select * from film
+2022-06-13 00:56:07: select * from film
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+2022-06-13 00:58:25: select * from film
+2022-06-13 00:58:52: select * from film
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+2022-06-13 14:33:42: select * from film
+2022-06-13 14:33:50: select * from film
+2022-06-13 14:33:58: SELECT * FROM film WHERE film_id=2
+2022-06-13 14:33:59: SELECT * FROM film WHERE film_id=1
+2022-06-13 14:36:51: SELECT * FROM film WHERE film_id=1
+2022-06-13 14:54:36: SELECT * FROM film WHERE film_id=1
+2022-06-13 14:54:51: SELECT * FROM film WHERE film_id=2
+2022-06-13 14:54:51: select * from film
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
+2022-06-13 14:56:30: select * from film
+2022-06-13 17:51:26: select * from film
+2022-06-13 17:51:33: SELECT * FROM film WHERE film_id=1
+2022-06-13 17:51:48: SELECT * FROM film WHERE film_id=1
+2022-06-13 17:53:52: SELECT * FROM film WHERE film_id=1
+2022-06-13 17:53:55: SELECT * FROM film WHERE film_id=2
+2022-06-13 17:53:55: select * from film
+2022-06-13 17:53:58: select * from film
+2022-06-13 17:54:38: select * from film
+2022-06-13 18:00:23: select * from film
+2022-06-13 18:00:38: select * from film
+2022-06-13 18:00:43: select * from film
+2022-06-13 18:00:46: SELECT * FROM film WHERE film_id=1
+Dit is een bericht vanuit de HomeController
+Dit is een bericht vanuit de HomeController
